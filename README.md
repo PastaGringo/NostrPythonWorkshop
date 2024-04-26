@@ -40,3 +40,8 @@ pipreqs .
 ```
 pipreqs . --force
 ```
+### Clear console function
+```
+def clear_console():
+    subprocess.call('cls' if os.name == 'nt' else 'clear', shell=True)
+```
